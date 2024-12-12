@@ -5,20 +5,34 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "main",
-            "type": "cppdbg", // c/c++ debugging
-            "request": "launch", // launch or attach
-            "cwd": "${workspaceFolder}", // working directory of the target
-            "program": "${workspaceFolder}/build/hello_world", // name of target to run
-            "args": [], // arguments to the program
-            "stopAtEntry": true, // break at main?
-            "environment": [
-                {"name": "env_name", "value": "env_value"},
-            ],
-            "externalConsole": false, // launch a new console?
-            "MIMode": "gdb", // gdb or lldb
-            "preLaunchTask": "build", // name of task to run before this
-            "targetArchitecture": "arm64" // most likely x86_64 or arm64
+            "name": "Test Environment Setup",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/build/test_env",
+            "args": [],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "build",
+            "targetArchitecture": "arm64"
+        },
+        {
+            "name": "Test Array ADT",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/build/test_array_adt",
+            "args": [],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "build",
+            "targetArchitecture": "arm64"
         }
     ]
 }
