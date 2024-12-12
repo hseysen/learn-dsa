@@ -4,6 +4,8 @@ project(dev LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+
 include_directories(include)
 
 add_executable(test_env programs/test_env.cpp)
