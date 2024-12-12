@@ -17,7 +17,7 @@ To avoid having to reinstall the extensions, I prefer to not remove the containe
 docker-compose stop
 ```
 
-In your VSCode, you will need `ms-vscode.cpptools`, `ms-vscode.cmake-tools` and `ms-vscode-remote.remote-containers` extensions installed. You will also need to install the first two in the container, but only during your first run. Even if you use `docker-compose stop` to shut down the container and remove it, the extension should be reinstalled automatically for the new containers.
+In your VSCode, it is recommended to install the extensions shown in [extensions.json](.vscode/extensions.json), both on your machine, and in the development container, but only during your first run. Even if you use `docker-compose stop` to shut down the container and remove it, the extension should be reinstalled automatically for the new containers.
 
 ## Verify
 If all works, you will be able to click **Build** and **Launch** buttons at the bottom of VSCode (from CMake Tools Extension), and see the text `Everything works fine.` in the output terminal.
