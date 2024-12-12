@@ -48,6 +48,21 @@
             "miDebuggerPath": "/usr/bin/gdb",
             "preLaunchTask": "build",
             "targetArchitecture": "arm64"
+        },
+        {
+            "name": "Example - Pairs with sum of K (Sorted)",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/bin/pair_sum_k_sorted",
+            "args": [],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "build",
+            "targetArchitecture": "arm64"
         }
     ]
 }

@@ -16,3 +16,4 @@ add_executable(test_array_adt tests/test_array_adt.cpp src/array_adt.cpp)
 
 # Algorithm examples
 add_executable(pair_sum_k algorithms/pair_sum_k.cpp)
+add_executable(pair_sum_k_sorted algorithms/pair_sum_k_sorted.cpp)
