@@ -8,8 +8,9 @@
             "defines": [
                 "DEBUG=1"
             ],
-            "compilerPath": "/usr/bin/gcc-12",
+            "compilerPath": "/usr/bin/g++-12",
             "cStandard": "c99",
+            "cppStandard": "c++17",
             "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
