@@ -8,5 +8,5 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 include_directories(include)
 
-add_executable(test_env programs/test_env.cpp)
-add_executable(test_array_adt programs/test_array_adt.cpp src/array_adt.cpp)
+add_executable(test_env tests/test_env.cpp)
+add_executable(test_array_adt tests/test_array_adt.cpp src/array_adt.cpp)
