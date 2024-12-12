@@ -1,5 +1,4 @@
-#ifndef ARRAY_ADT_HPP
-#define ARRAY_ADT_HPP
+#pragma once
 
 class Array{
 private:
@@ -41,5 +40,3 @@ public:
     Array* Intersection(Array* arr2);
     Array* Difference(Array* arr2);
 };
-
-#endif
