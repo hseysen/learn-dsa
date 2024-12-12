@@ -22,5 +22,10 @@ In your VSCode, you will need `ms-vscode.cpptools`, `ms-vscode.cmake-tools` and 
 ## Verify
 If all works, you will be able to click **Build** and **Launch** buttons at the bottom of VSCode (from CMake Tools Extension), and see the text `Everything works fine.` in the output terminal.
 
-## Running example programs
-Currently, only one example program exists, which is about the Array ADT. The Debug launch configuration is available for running the code and inspecting its output. Future topics will also have their own configurations for the ease of use.
+## Running examples
+Open the **Run and Debug** window in VSCode by pressing **Ctrl + Shift + D** (or choose from side bar). Choose one of the options in the top and run it. Current examples:
+|         Example Name          | Notes for the Example                                                                                                                                                                               |
+|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    Test Environment Setup     | Run this example to make sure your environment is set up correctly and your Docker image can see your compiler. Source code is [here](tests/test_env.cpp).                                          |
+|        Test Array ADT         | Run this example to quickly test all the methods of the Array Abstract Data Type. Source code is [here](tests/test_array_adt.cpp).                                                                  |
+| Example - Pairs with sum of K | This example shows an efficient solution to the problem of finding all pairs of numbers inside an unsorted non-negative array with no duplicates. Source code is [here](algorithms/pair_sum_k.cpp). |
