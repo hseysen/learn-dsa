@@ -15,8 +15,12 @@ bool string_is_palindrome(string s){
 }
 
 
-int main(){
-    string test_word = "racecar";
+int main(int argc, char* argv[]){
+    if(argc != 2){
+        cerr << "Usage: palindrome_number <test_word>" << endl;
+        return 1;
+    }
+    string test_word = argv[1];
     bool is_palindrome = string_is_palindrome(test_word);
     cout << "Provided string: " << test_word << endl;
     if(is_palindrome) cout << "This string is a palindrome" << endl;

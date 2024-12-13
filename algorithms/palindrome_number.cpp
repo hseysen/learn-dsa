@@ -18,11 +18,20 @@ bool number_is_palindrome(int x){
 }
 
 
-int main(){
-    int test_number = 356848653;
-    bool is_palindrome = number_is_palindrome(test_number);
-    cout << "Provided number: " << test_number << endl;
-    if(is_palindrome) cout << "This number is a palindrome" << endl;
-    else cout << "This number is not a palindrome." << endl;
-    return 0;
+int main(int argc, char* argv[]){
+    if(argc != 2){
+        cerr << "Usage: palindrome_number <test_number>" << endl;
+        return 1;
+    }
+    try{
+        int test_number = stoi(argv[1]);
+        bool is_palindrome = number_is_palindrome(test_number);
+        cout << "Provided number: " << test_number << endl;
+        if(is_palindrome) cout << "This number is a palindrome." << endl;
+        else cout << "This number is not a palindrome." << endl;
+        return 0;
+    }catch (const exception& e) {
+        cerr << "Error: Invalid integer format for '" << argv[1] << "'\n";
+        return 1;
+    }
 }
