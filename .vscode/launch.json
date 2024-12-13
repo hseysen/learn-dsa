@@ -78,6 +78,21 @@
             "miDebuggerPath": "/usr/bin/gdb",
             "preLaunchTask": "build",
             "targetArchitecture": "arm64"
+        },
+        {
+            "name": "Example - Check if number is a Palindrome",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/bin/palindrome_number",
+            "args": [],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "build",
+            "targetArchitecture": "arm64"
         }
     ]
 }
